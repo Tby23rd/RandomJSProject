@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Computer Graphics - Assignment 3</title>
+</head>
+
+<body>
+    <div>
+        <label for="scaling" onkeypress="changeColor()">Change rotation and scaling speed:</label>
+        <input type="range" id="scaling" name="scaling" min="0" max="100">
+    </div>
+
+    <p><button id="button" >Change Rotation direction</button></p>
+    <p>
+        <label for="color">Change square color:</label>
+        <select onchange="myFunction()" class="color" id="rgb">
+        <option id="red" value="FireBrick">FireBrick</option>
+        <option id="green" value="OliveDrab">OliveDrab</option>
+        <option id="blue" value="Peru">Peru</option>
+        <option id="white" value="SaddleBrown">SaddleBrown</option>
+        <option id="pink" value="Thistle" >Thistle</option>
+      </select>
+
+        <canvas id="canvas"></canvas>
+
+</body>
+<script src="main.js"></script>
+
+</html>
